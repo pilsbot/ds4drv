@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>ds4drv</name>
+  <version>0.5.1</version>
+  <description>
+      Dualshock driver, tweaked to fit in a Ros2 environment
+  </description>
+  <maintainer email="da_ha@mailbox.org">Daniel Hackbarth</maintainer>
+  <license>BSD</license>
+
+  <depend>python3-evdev</depend>
+  <depend>python3-pyudev</depend>
+  <depend>bluez</depend>
+
+  <test_depend>ament_flake8</test_depend>
+  <test_depend>ament_pep257</test_depend>
+  <test_depend>python3-pytest</test_depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>
